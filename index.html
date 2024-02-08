@@ -1,6 +1,8 @@
 <html lang="en-US">
   <meta charset="utf-8">
+  <!--
   <title>Google ᵐᵃᵍⁱᶜ Redirect</title>
+  -->
 <script type="text/javascript">
     // Define a function to add "http://" if missing
     function addHttpIfNeeded(url) {
@@ -14,7 +16,7 @@
     //var token = window.location.href.split("#")[1];
     var token = window.location.href.substring(window.location.href.indexOf('#') + 1);
     // Add "http://" if needed
-  document.title = document.title +" : "+ token;
+  document.title = "Google ᵐᵃᵍⁱᶜ Redirect" +" : "+ token;
     token = addHttpIfNeeded(token); // Comment out to be nasty
     window.location = token;
 </script>
