@@ -18,9 +18,12 @@
     // Add "http://" if needed
   document.title = "Google ᵐᵃᵍⁱᶜ Redirect" +" : "+ token;
     token = addHttpIfNeeded(token); // Comment out to be nasty
-    window.location = token;
+    // To achieve a faster redirect, you can use window.location.replace() instead of window.location. The replace() method does not create a new entry in the browser's history, resulting in a faster redirection
+    // Redirect to the token URL using replace() for faster redirection
+    window.location.replace(token);
+    // window.location = token; // slow
 </script>
-  <body><h3>I'm a Jedi...</h1></body>
+  <!--<body><h3>I'm a Jedi...</h1></body>-->
 </html>
 
 <!--
