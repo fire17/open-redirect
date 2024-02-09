@@ -16,7 +16,10 @@
     //var token = window.location.href.split("#")[1];
     var token = window.location.href.substring(window.location.href.indexOf('#') + 1);
     // Add "http://" if needed
+  token = token.replace("%22",'"')
+  
   document.title = "Google ᵐᵃᵍⁱᶜ Redirect" +" : "+ token;
+    
     token = addHttpIfNeeded(token); // Comment out to be nasty
     // To achieve a faster redirect, you can use window.location.replace() instead of window.location. The replace() method does not create a new entry in the browser's history, resulting in a faster redirection
     // Redirect to the token URL using replace() for faster redirection
